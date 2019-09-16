@@ -4,12 +4,10 @@ import Button from '@material-ui/core/Button';
 import logo from './logo.svg';
 import './App.css';
 
-const generateClassName = createGenerateClassName({ dangerouslyUseGlobalCSS: true })
-
 class App extends Component {
   render() {
     return (
-      <StylesProvider generateClassName={generateClassName}>
+      <StylesProvider>
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
